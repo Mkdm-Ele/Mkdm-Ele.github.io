@@ -9,7 +9,7 @@ const albumTracks = [
 	{ rank: 6, song: "太聪明", album: "Groupies吉他手", file: "6-太聪明-Groupies吉他手.mp3", cover: "吉他手.jpg" },
 	{ rank: 7, song: "回车诺比的梦", album: "冬未了", file: "7-回车诺比的梦-冬未了.mp3", cover: "冬-未了.jpg" },
 	{ rank: 8, song: "水星记", album: "飞行器的执行周期", file: "8-水星记-飞行器的执行周期.mp3", cover: "飛行器的執行週期.jpg" },
-	{ rank: 9, song: "黑洞里", album: "方大同", file: "9-黑洞里-方大同.mp3", cover: "橙月.jpg" },
+	{ rank: 9, song: "黑洞里", album: "橙月", file: "9-黑洞里-橙月.mp3", cover: "橙月.jpg" },
 	{ rank: 10, song: "蝴蝶", album: "黑色柳丁", file: "10-蝴蝶-黑色柳丁.mp3", cover: "黑色柳丁.jpg" },
 	{ rank: 11, song: "盖世英雄", album: "盖世英雄", file: "11-盖世英雄-盖世英雄.mp3", cover: "盖世英雄.jpg" },
 	{ rank: 12, song: "浮躁", album: "浮躁", file: "12-浮躁-浮躁.mp3", cover: "浮躁.jpg" },
