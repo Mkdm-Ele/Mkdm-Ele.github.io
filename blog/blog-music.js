@@ -1,5 +1,16 @@
 const MUSIC_ASSET_BASE = "../assets";
 const MUSIC_STATE_KEY = "mkdm-ele-music-state";
+const ACTIVE_DOCUMENT_TITLE = document.title || "Mkdm-Ele";
+const AWAY_DOCUMENT_TITLE = "SEE YOU SPACE COWBOY...";
+
+function initVisibilityTitle() {
+	const updateTitle = () => {
+		document.title = document.hidden ? AWAY_DOCUMENT_TITLE : ACTIVE_DOCUMENT_TITLE;
+	};
+
+	document.addEventListener("visibilitychange", updateTitle);
+	updateTitle();
+}
 const albumTracks = [
 	{ rank: 1, song: "神探", album: "神经志", file: "1-神探-神经志.mp3", cover: "神经志.jpg" },
 	{ rank: 2, song: "蝉想", album: "夏狂热", file: "2-蝉想-夏狂热.mp3", cover: "夏-狂热.jpg" },
@@ -318,4 +329,7 @@ function initMusicPlayer() {
 	}
 }
 
-document.addEventListener("DOMContentLoaded", initMusicPlayer);
+document.addEventListener("DOMContentLoaded", () => {
+	initVisibilityTitle();
+	initMusicPlayer();
+});
