@@ -1,0 +1,1 @@
+{"name":"mkdm-robotics-portfolio","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"vite --host 0.0.0.0","build":"vite build","preview":"vite preview --host 0.0.0.0"},"dependencies":{"@fontsource-variable/dm-sans":"^5.3.0","@fontsource/dm-mono":"^5.3.0","lucide":"^0.468.0","three":"^0.180.0","urdf-loader":"^0.12.6"},"devDependencies":{"vite":"^7.1.7"}}
