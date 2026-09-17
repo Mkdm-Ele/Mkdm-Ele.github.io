@@ -1,1 +1,34 @@
-{"name":"mkdm-robotics-portfolio","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"vite --host 0.0.0.0","build":"vite build","preview":"vite preview --host 0.0.0.0"},"dependencies":{"@fontsource-variable/dm-sans":"^5.3.0","@fontsource/dm-mono":"^5.3.0","lucide":"^0.468.0","three":"^0.180.0","urdf-loader":"^0.12.6"},"devDependencies":{"vite":"^7.1.7"}}
+{
+  "name": "mkdm-robotics-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173 --strictPort",
+    "build": "vite build && node scripts/build-pages.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "playwright test",
+    "predev": "node scripts/prepare-editor.mjs",
+    "prebuild": "node scripts/prepare-editor.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@fontsource/dm-mono": "^5.3.0",
+    "@supabase/supabase-js": "^2.116.0",
+    "dompurify": "^3.4.15",
+    "katex": "^0.18.7",
+    "lucide": "^0.468.0",
+    "marked": "^18.0.13",
+    "marked-katex-extension": "^5.1.13",
+    "three": "^0.180.0",
+    "urdf-loader": "^0.12.6",
+    "vditor": "^4.0.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@playwright/test": "^1.63.0",
+    "jsdom": "^29.1.1",
+    "vite": "^7.1.7"
+  }
+}
